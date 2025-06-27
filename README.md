@@ -1,6 +1,6 @@
-# PyDistMesh
+# DistMeshPy
 
-PyDistMesh is a Python implementation of the [DistMesh](http://persson.berkeley.edu/distmesh/) algorithm based on the original MATLAB implementation. 
+DistMeshPy is a Python implementation of the [DistMesh](http://persson.berkeley.edu/distmesh/) algorithm based on the original MATLAB implementation. 
 
 ## Features
 
@@ -11,12 +11,8 @@ PyDistMesh is a Python implementation of the [DistMesh](http://persson.berkeley.
 
 ## Installation
 
-Clone the repository and install the required dependencies:
-
 ```bash
-git clone https://github.com/yourusername/PyDistMesh.git
-cd /path/to/PyDistMesh
-pip install -e .
+pip install distmeshpy
 ```
 
 #### Note: A working C++11 order higher compiler is required. 
@@ -24,9 +20,11 @@ pip install -e .
 ## Usage
 
 Here's a quick example of how to generate a 2D mesh:
+
 ```python
-from pydistmesh import distmesh2d
-from pydistmesh.utils import dcircle, huniform
+from distmeshpy import distmesh2d
+from distmeshpy.utils import dcircle, huniform
+
 p, t = distmesh2d(
     lambda p: dcircle(p, 0.0, 0.0, 1.0),  # Distance function
     huniform,  # Uniform size function
@@ -55,4 +53,4 @@ Following the original work, this project is licensed under the GNU General Publ
 
 ## Acknowledgments
 
-PyDistMesh is inspired by the original MATLAB DistMesh implementation by Per-Olof Persson and Gilbert Strang.
+DistMeshPy is inspired by the original MATLAB DistMesh implementation by Per-Olof Persson and Gilbert Strang.

@@ -1,6 +1,6 @@
 """Wrapper utility functions for triangular meshes, implemented in C++."""
 
-from pydistmesh._triangle_utils import (
+from distmeshpy._triangle_utils import (
     _triangle_area,
     _triangle_area_all,
     _triangle_find_edges,
@@ -10,7 +10,7 @@ from pydistmesh._triangle_utils import (
     _triangle_quality_all,
     _TriangleConnectivity,
 )
-from pydistmesh._typing import Array, Float, Triangulation
+from distmeshpy._typing import Array, Float, Triangulation
 
 
 def triangle_area(p1: Array, p2: Array, p3: Array) -> Float:

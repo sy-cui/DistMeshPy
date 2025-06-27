@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-from pydistmesh import distmesh2d
-from pydistmesh.utils import dcircle, drectangle, ddiff
+from distmeshpy import distmesh2d
+from distmeshpy.utils import dcircle, drectangle, ddiff
 
 
 def mesh_hollow_rectangle():

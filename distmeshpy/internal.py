@@ -1,7 +1,7 @@
 """Internal utility wrapper functions implemented in C++."""
 
-from pydistmesh._internal import _apply_force_2d, _apply_force_3d
-from pydistmesh._typing import Array, Triangulation
+from distmeshpy._internal import _apply_force_2d, _apply_force_3d
+from distmeshpy._typing import Array, Triangulation
 
 
 def apply_force_2d(

@@ -7,10 +7,10 @@ from typing import Any
 import numpy as np
 from scipy.spatial import Delaunay  # type: ignore
 
-from pydistmesh._typing import Array, Float, Function, Triangulation
-from pydistmesh.internal import apply_force_3d
-from pydistmesh.tetrahedron_utils import tetrahedron_find_edges
-from pydistmesh.utils.config import DistMeshConfig, default_3d_config
+from distmeshpy._typing import Array, Float, Function, Triangulation
+from distmeshpy.internal import apply_force_3d
+from distmeshpy.tetrahedron_utils import tetrahedron_find_edges
+from distmeshpy.utils.config import DistMeshConfig, default_3d_config
 
 
 # TODO: add loggers

@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from pydistmesh import distmeshsurface
-from pydistmesh.utils import huniform
+from distmeshpy import distmeshsurface
+from distmeshpy.utils import huniform
 
 
 def mesh_ellipsoid(

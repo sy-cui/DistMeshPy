@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
-from pydistmesh import distmesh2d
-from pydistmesh.utils import huniform
+from distmeshpy import distmesh2d
+from distmeshpy.utils import huniform
 
 
 def mesh_ellipse(

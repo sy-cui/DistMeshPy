@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
-from pydistmesh import distmeshsurface
-from pydistmesh.utils import dsphere
+from distmeshpy import distmeshsurface
+from distmeshpy.utils import dsphere
 
 
 def mesh_graded_sphere():

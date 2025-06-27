@@ -11,7 +11,7 @@ from dataclasses import dataclass
 
 import numpy as np
 
-from pydistmesh._typing import Float, Int
+from distmeshpy._typing import Float, Int
 
 MACHINE_EPS_SQRT = np.sqrt(np.finfo(np.float64).eps)
 

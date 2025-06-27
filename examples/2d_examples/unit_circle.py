@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
-from pydistmesh import distmesh2d
-from pydistmesh.utils import dcircle, huniform
+from distmeshpy import distmesh2d
+from distmeshpy.utils import dcircle, huniform
 
 
 def mesh_unit_circle():

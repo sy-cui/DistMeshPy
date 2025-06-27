@@ -7,10 +7,10 @@ from typing import Any
 import numpy as np
 from mcubes import marching_cubes  # type: ignore
 
-from pydistmesh._typing import Array, Float, Function, Triangulation
-from pydistmesh.internal import apply_force_3d
-from pydistmesh.triangle_utils import TriangleConnectivity, triangle_find_edges
-from pydistmesh.utils.config import DistMeshConfig, default_surface_config
+from distmeshpy._typing import Array, Float, Function, Triangulation
+from distmeshpy.internal import apply_force_3d
+from distmeshpy.triangle_utils import TriangleConnectivity, triangle_find_edges
+from distmeshpy.utils.config import DistMeshConfig, default_surface_config
 
 
 def distmeshsurface(

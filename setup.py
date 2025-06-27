@@ -7,7 +7,7 @@ def create_extension(name: str, sources: list[str]) -> None:
     return Extension(
         name,
         sources=sources,
-        include_dirs=["pydistmesh/src", pybind11.get_include(), numpy.get_include()],
+        include_dirs=["distmeshpy/src", pybind11.get_include(), numpy.get_include()],
         language="c++",
         extra_compile_args=["-O3", "-march=native", "-std=c++11"],
     )
@@ -15,12 +15,12 @@ def create_extension(name: str, sources: list[str]) -> None:
 
 ext_modules = [
     create_extension(
-        "pydistmesh._triangle_utils", ["pydistmesh/src/triangle_utils.cpp"]
+        "distmeshpy._triangle_utils", ["distmeshpy/src/triangle_utils.cpp"]
     ),
     create_extension(
-        "pydistmesh._tetrahedron_utils", ["pydistmesh/src/tetrahedron_utils.cpp"]
+        "distmeshpy._tetrahedron_utils", ["distmeshpy/src/tetrahedron_utils.cpp"]
     ),
-    create_extension("pydistmesh._internal", ["pydistmesh/src/internal.cpp"]),
+    create_extension("distmeshpy._internal", ["distmeshpy/src/internal.cpp"]),
 ]
 
 setup(ext_modules=ext_modules)

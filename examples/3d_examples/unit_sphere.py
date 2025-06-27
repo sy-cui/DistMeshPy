@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
-from pydistmesh import distmesh3d
-from pydistmesh.utils import dsphere, huniform
-from pydistmesh.tetrahedron_utils import tetrahedron_find_surface
+from distmeshpy import distmesh3d
+from distmeshpy.utils import dsphere, huniform
+from distmeshpy.tetrahedron_utils import tetrahedron_find_surface
 
 if __name__ == "__main__":
     pos, tet = distmesh3d(

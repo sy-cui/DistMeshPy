@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from pydistmesh import distmesh2d
-from pydistmesh.utils import dcircle, ddiff
+from distmeshpy import distmesh2d
+from distmeshpy.utils import dcircle, ddiff
 
 
 def mesh_airfoil():

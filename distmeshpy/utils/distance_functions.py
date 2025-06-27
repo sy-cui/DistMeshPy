@@ -2,7 +2,7 @@
 
 import numpy as np
 
-from pydistmesh._typing import Array, Float
+from distmeshpy._typing import Array, Float
 
 
 def drectangle(p: Array, x1: Float, x2: Float, y1: Float, y2: Float) -> Array:
