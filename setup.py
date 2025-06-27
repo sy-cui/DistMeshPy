@@ -7,7 +7,7 @@ def create_extension(name: str, sources: list[str]) -> None:
     return Extension(
         name,
         sources=sources,
-        include_dirs=[pybind11.get_include(), numpy.get_include()],
+        include_dirs=["pydistmesh/src", pybind11.get_include(), numpy.get_include()],
         language="c++",
         extra_compile_args=["-O3", "-march=native", "-std=c++11"],
     )
