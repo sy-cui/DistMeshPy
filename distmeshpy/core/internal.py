@@ -1,7 +1,8 @@
 """Internal utility wrapper functions implemented in C++."""
 
-from distmeshpy._internal import _apply_force_2d, _apply_force_3d
 from distmeshpy._typing import Array, Triangulation
+
+from ._internal import _apply_force_2d, _apply_force_3d
 
 
 def apply_force_2d(

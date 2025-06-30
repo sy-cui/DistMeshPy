@@ -1,10 +1,11 @@
 """Wrapper utility functions for tetrahedron meshes, implemented in C++."""
 
-from distmeshpy._tetrahedron_utils import (
+from distmeshpy._typing import Array, Triangulation
+
+from ._tetrahedron_utils import (
     _tetrahedron_find_edges,
     _tetrahedron_find_surface,
 )
-from distmeshpy._typing import Array, Triangulation
 
 
 def tetrahedron_find_edges(f2v: Triangulation) -> Triangulation:
