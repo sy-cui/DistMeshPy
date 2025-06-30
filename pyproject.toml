@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "distmeshpy"
-version = "1.1.0"
+version = "1.1.1"
 authors = [{name= "Songyuan Cui", email="cui20@illinois.edu"}]
 description = "A Python implemenetation of the distmesh algorithm"
 license = "GPL-3.0-or-later"
@@ -35,7 +35,7 @@ classifiers = [
 repository = "https://github.com/sy-cui/distmeshpy.git"
 
 [tool.setuptools]
-packages = ["distmeshpy"]
+packages = ["distmeshpy", "distmeshpy.src"]
 
 [tool.setuptools.package-data]
 "distmeshpy" = ["*.so"]
