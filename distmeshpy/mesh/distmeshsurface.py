@@ -8,8 +8,7 @@ import numpy as np
 from mcubes import marching_cubes  # type: ignore
 
 from distmeshpy._typing import Array, Float, Function, Triangulation
-from distmeshpy.internal import apply_force_3d
-from distmeshpy.triangle_utils import TriangleConnectivity, triangle_find_edges
+from distmeshpy.core import TriangleConnectivity, apply_force_3d, triangle_find_edges
 from distmeshpy.utils.config import DistMeshConfig, default_surface_config
 
 

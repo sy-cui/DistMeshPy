@@ -1,2 +1,1 @@
-from distmeshpy.mesh import *
-from distmeshpy.core import *
+from .mesh import *
