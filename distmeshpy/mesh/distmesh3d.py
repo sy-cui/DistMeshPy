@@ -8,7 +8,7 @@ import numpy as np
 from scipy.spatial import Delaunay  # type: ignore
 
 from distmeshpy._typing import Array, Float, Function, Triangulation
-from distmeshpy.core import apply_force_3d
+from distmeshpy.core import apply_force_3d, tetrahedron_find_edges
 from distmeshpy.utils.config import DistMeshConfig, default_3d_config
 
 
